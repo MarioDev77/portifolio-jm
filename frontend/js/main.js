@@ -2,7 +2,7 @@
 // Configuração
 // ============================================
 // Troque pela URL real do backend depois do deploy no Railway.
-const API_URL = 'https://SEU-BACKEND.up.railway.app/api/contact';
+const API_URL = 'https://portifolio-jm-production.up.railway.app/api/contact';
 
 // ============================================
 // Ano no footer
