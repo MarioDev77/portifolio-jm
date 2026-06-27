@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>João Mario — Desenvolvedor Full-Stack</title>
+<meta name="description" content="Portfólio de João Mario (jm) — desenvolvedor full-stack especializado em Node.js, React e sistemas web completos.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#top" class="logo-wrap">
+      <img src="images/logo.png" alt="Logo JM">
+      <span>joão mario</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#projetos">projetos</a>
+      <a href="#sobre">sobre</a>
+      <a href="#stack">stack</a>
+    </nav>
+    <a href="#contato" class="nav-cta">contato()</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#projetos">projetos</a>
+  <a href="#sobre">sobre</a>
+  <a href="#stack">stack</a>
+  <a href="#contato">contato()</a>
+</div>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow">disponível para novos projetos</div>
+        <h1>Eu transformo <span class="accent">ideias</span> em sistemas web que <span class="accent">funcionam</span>.</h1>
+        <p class="lede">Sou João Mario, desenvolvedor full-stack. Construo desde plataformas de impacto social até e-commerces e sistemas de agendamento — do banco de dados à interface.</p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">Ver projetos →</a>
+          <a href="#contato" class="btn btn-secondary">Falar comigo</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-filename">sobre-mim.js</span>
+        </div>
+        <div class="terminal-body">
+          <pre class="typed-text" id="typedTerminal"></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">projetos</div>
+        <h2>O que eu já construí</h2>
+        <p>Projetos reais, em produção, cobrindo backend, frontend e integrações de pagamento/IA.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="card-tabbar">
+            <span class="card-tab active"><span class="lang-dot" style="background:#68a063"></span>Node.js</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#4479A1"></span>MySQL</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#e34c26"></span>HTML/CSS/JS</span>
+            <span class="card-status status-live">em produção</span>
+          </div>
+          <div class="card-body">
+            <h3>CrisoApp — CrisoVerde</h3>
+            <div class="card-tagline">plataforma de recompensa por reciclagem</div>
+            <p class="card-desc">Sistema completo onde moradores recebem CrisoMoedas ao reciclar em pontos parceiros, e trocam essas moedas por descontos em estabelecimentos locais. Três painéis (admin, cliente e loja), login com Google, e geração de vouchers via QR Code com expiração de 5 minutos para evitar fraude.</p>
+            <div class="tech-row">
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">OAuth Google</span>
+              <span class="tech-pill">Railway</span>
+            </div>
+            <div class="card-links">
+              <a href="https://appcrisoverde-production.up.railway.app/login.html" target="_blank" rel="noopener noreferrer" class="card-link">Acessar app <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-tabbar">
+            <span class="card-tab active"><span class="lang-dot" style="background:#3178c6"></span>TypeScript</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#68a063"></span>Node.js</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#4169e1"></span>PostgreSQL</span>
+            <span class="card-status status-live">em produção</span>
+          </div>
+          <div class="card-body">
+            <h3>Crisoverde Digital</h3>
+            <div class="card-tagline">vitrine institucional + chatbot com IA</div>
+            <p class="card-desc">Hub de comunicação do ecossistema CrisoVerde, com galeria de vídeos em estilo streaming (tema escuro, glassmorphism) e um chatbot com IA integrado, protegido contra prompt injection, com bloqueio progressivo de IPs e limitação de requisições.</p>
+            <div class="tech-row">
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">Groq API</span>
+              <span class="tech-pill">Vercel</span>
+            </div>
+            <div class="card-links">
+              <a href="https://crisoverdedigital.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-link">Visitar site <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-tabbar">
+            <span class="card-tab active"><span class="lang-dot" style="background:#e34c26"></span>HTML/CSS/JS</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#68a063"></span>Node.js</span>
+            <span class="card-status status-live">em produção</span>
+          </div>
+          <div class="card-body">
+            <h3>Crisomoeda</h3>
+            <div class="card-tagline">vitrine da moeda social do projeto</div>
+            <p class="card-desc">Site explicativo sobre o funcionamento das CrisoMoedas — a moeda social (não criptomoeda) usada dentro do ecossistema CrisoVerde para recompensar quem recicla e dar desconto em parceiros comerciais.</p>
+            <div class="tech-row">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Vercel</span>
+            </div>
+            <div class="card-links">
+              <a href="https://crisomoeda.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-link">Visitar site <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-tabbar">
+            <span class="card-tab active"><span class="lang-dot" style="background:#68a063"></span>Node.js</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#4479A1"></span>MySQL</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#e34c26"></span>HTML/CSS/JS</span>
+            <span class="card-status status-live">em produção</span>
+          </div>
+          <div class="card-body">
+            <h3>Catálogo Evidências Modas</h3>
+            <div class="card-tagline">e-commerce de moda feminina</div>
+            <p class="card-desc">Catálogo digital de roupas com zoom de produto, painel admin para gestão de itens, autenticação JWT real com bcrypt, bloqueio progressivo contra tentativas de invasão e integração direta com WhatsApp para fechar pedidos.</p>
+            <div class="tech-row">
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">JWT</span>
+              <span class="tech-pill">Railway</span>
+            </div>
+            <div class="card-links">
+              <a href="https://catalogo-eveidencias.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-link">Visitar catálogo <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card full-width">
+          <div class="card-tabbar">
+            <span class="card-tab active"><span class="lang-dot" style="background:#68a063"></span>Node.js</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#4479A1"></span>MySQL</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#e34c26"></span>HTML/CSS/JS</span>
+            <span class="card-status status-progress">em desenvolvimento</span>
+          </div>
+          <div class="card-body">
+            <h3>Pitch Futebol</h3>
+            <div class="card-tagline">e-commerce de produtos esportivos</div>
+            <p class="card-desc">Loja virtual completa de artigos de futebol, com carrinho, checkout com login/cadastro automático, máscaras de CPF/telefone/CEP e rotas administrativas ocultas. Passou por auditoria de segurança própria: proteção contra SQL injection, IDOR, rate limiting e tokens JWT mantidos apenas em memória no cliente.</p>
+            <div class="tech-row">
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">Helmet</span>
+              <span class="tech-pill">bcrypt</span>
+              <span class="tech-pill">Vercel + Railway</span>
+            </div>
+            <div class="card-links">
+              <a href="https://loja-virtual-five-sable.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-link">Visitar loja <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-tabbar">
+            <span class="card-tab active"><span class="lang-dot" style="background:#f7df1e"></span>JavaScript</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#e34c26"></span>HTML/CSS</span>
+            <span class="card-status status-live">entregue</span>
+          </div>
+          <div class="card-body">
+            <h3>Missão Cidade Limpa</h3>
+            <div class="card-tagline">jogo educativo sobre reciclagem</div>
+            <p class="card-desc">Jogo de navegador 100% em JavaScript puro (sem frameworks), com modo história de 4 fases, diálogos com NPCs, mecânica de separação de lixo seguindo o padrão de cores de coleta seletiva do Brasil e salvamento de progresso local.</p>
+            <div class="tech-row">
+              <span class="tech-pill">JavaScript puro</span>
+              <span class="tech-pill">LocalStorage</span>
+              <span class="tech-pill">Canvas/DOM</span>
+            </div>
+            <div class="card-links">
+              <span class="card-link" style="opacity:0.5; cursor:default;">Projeto entregue ao cliente</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-tabbar">
+            <span class="card-tab active"><span class="lang-dot" style="background:#3178c6"></span>TypeScript</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#61dafb"></span>React</span>
+            <span class="card-tab"><span class="lang-dot" style="background:#4169e1"></span>PostgreSQL</span>
+            <span class="card-status status-live">entregue</span>
+          </div>
+          <div class="card-body">
+            <h3>Agenda de Salão</h3>
+            <div class="card-tagline">sistema de agendamento para autônomas</div>
+            <p class="card-desc">Sistema de agendamento sob medida para uma proprietária de salão de manicure/pedicure, com autenticação JWT, prevenção de horários duplicados, exportação de relatórios em CSV e lembretes automáticos via WhatsApp.</p>
+            <div class="tech-row">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Tailwind CSS</span>
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">PostgreSQL</span>
+            </div>
+            <div class="card-links">
+              <span class="card-link" style="opacity:0.5; cursor:default;">Projeto entregue ao cliente</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">sobre mim</div>
+        <h2>Da Bahia pro seu navegador.</h2>
+        <p>Desenvolvedor full-stack focado em construir produtos do zero — banco de dados, API e interface — com atenção real a segurança e experiência de uso, não só "fazer funcionar".</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">stack</div>
+        <h2>Ferramentas que eu domino</h2>
+      </div>
+      <div class="stack-grid reveal">
+        <div class="stack-item"><div class="stack-name">Node.js / Express</div><div class="stack-role">backend</div></div>
+        <div class="stack-item"><div class="stack-name">TypeScript</div><div class="stack-role">linguagem</div></div>
+        <div class="stack-item"><div class="stack-name">React</div><div class="stack-role">frontend</div></div>
+        <div class="stack-item"><div class="stack-name">MySQL / PostgreSQL</div><div class="stack-role">banco de dados</div></div>
+        <div class="stack-item"><div class="stack-name">SQLite</div><div class="stack-role">banco de dados</div></div>
+        <div class="stack-item"><div class="stack-name">JWT / bcrypt</div><div class="stack-role">autenticação</div></div>
+        <div class="stack-item"><div class="stack-name">Railway</div><div class="stack-role">deploy backend</div></div>
+        <div class="stack-item"><div class="stack-name">Vercel</div><div class="stack-role">deploy frontend</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <div class="eyebrow">vamos conversar</div>
+        <h2>Tem um projeto em mente?</h2>
+        <p>Me manda uma mensagem pelo formulário ou direto pelos canais abaixo. Respondo rápido.</p>
+        <div class="contact-channels">
+          <a href="https://github.com/MarioDev77" target="_blank" rel="noopener noreferrer" class="contact-channel">
+            <span class="channel-icon">⌥</span> github.com/MarioDev77
+          </a>
+        </div>
+      </div>
+
+      <form id="contact-form" class="reveal" novalidate>
+        <div class="form-group">
+          <label for="name">nome</label>
+          <input type="text" id="name" name="name" maxlength="80" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="email">e-mail</label>
+          <input type="email" id="email" name="email" maxlength="120" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="message">mensagem</label>
+          <textarea id="message" name="message" maxlength="2000" required></textarea>
+        </div>
+
+        <div class="form-group hp-field" aria-hidden="true">
+          <label for="website">não preencher</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">Enviar mensagem</button>
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    &lt;JM/&gt; — feito com Node.js, café e paciência. © <span id="year"></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
